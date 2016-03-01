@@ -52,7 +52,7 @@
         <classShapeMoniker Id="6b010680-7522-45a8-bc34-4888eca611e2" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 4.38064697265625); (3.5 : 4.38064697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 4.38064697265625); (3.5 : 4.38064697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/CoursewareDataContext/AspNetUser/AspNetUser_AspNetUserLogin" />
       <nodes>
         <classShapeMoniker Id="1790ac50-ca53-4780-a9f9-161f2459afff" />
@@ -98,14 +98,14 @@
         <elementListCompartment Id="8bb48f25-01b3-4bcf-bc4e-b561e174d8ef" absoluteBounds="11.89, 8.46, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(8.375 : 9.16429768880208); (9.125 : 9.16429768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(8.375 : 9.16429768880208); (9.125 : 9.16429768880208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/CoursewareDataContext/Language/Language_Course" />
       <nodes>
         <classShapeMoniker Id="dea70706-db8a-4871-aeb4-e6f5fd0564d3" />
         <classShapeMoniker Id="e65e437c-7889-4322-8f16-df6fa9085498" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(11.125 : 9.26044840494792); (11.875 : 9.26044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(11.125 : 9.26044840494792); (11.875 : 9.26044840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/CoursewareDataContext/Course/Course_CourseItem" />
       <nodes>
         <classShapeMoniker Id="e65e437c-7889-4322-8f16-df6fa9085498" />

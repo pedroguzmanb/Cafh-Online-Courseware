@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(Org.Carfh.Courseware.Startup))]
-namespace Org.Carfh.Courseware
+[assembly: OwinStartupAttribute(typeof(Org.Cafh.Courseware.Startup))]
+namespace Org.Cafh.Courseware
 {
     public partial class Startup
     {

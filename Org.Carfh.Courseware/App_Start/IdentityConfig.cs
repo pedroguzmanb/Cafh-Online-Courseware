@@ -12,12 +12,12 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using Org.Carfh.Courseware.Models;
-using Org.Carfh.Courseware.Properties;
+using Org.Cafh.Courseware.Models;
+using Org.Cafh.Courseware.Properties;
 using SendGrid;
 using Twilio;
 
-namespace Org.Carfh.Courseware
+namespace Org.Cafh.Courseware
 {
     public class EmailService : IIdentityMessageService
     {

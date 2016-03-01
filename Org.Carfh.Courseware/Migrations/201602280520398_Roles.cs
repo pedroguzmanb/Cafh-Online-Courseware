@@ -1,4 +1,4 @@
-namespace Org.Carfh.Courseware.Migrations
+namespace Org.Cafh.Courseware.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

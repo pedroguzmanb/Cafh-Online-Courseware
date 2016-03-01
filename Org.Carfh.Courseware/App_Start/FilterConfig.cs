@@ -1,8 +1,8 @@
 ﻿using System.Web;
 using System.Web.Mvc;
-using Org.Carfh.Courseware.Filters;
+using Org.Cafh.Courseware.Filters;
 
-namespace Org.Carfh.Courseware
+namespace Org.Cafh.Courseware
 {
     public class FilterConfig
     {

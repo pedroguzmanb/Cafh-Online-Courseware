@@ -9,7 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Org.Carfh.Courseware.Models.Repositories
+namespace Org.Cafh.Courseware.Models.Repositories
 {
 	using System.Data.Linq;
 	using System.Data.Linq.Mapping;

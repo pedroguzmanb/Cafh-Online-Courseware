@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity.EntityFramework;
 
-namespace Org.Carfh.Courseware.Models
+namespace Org.Cafh.Courseware.Models
 {
     // ------------------------------------------------------------------------------------------------------------------------------------ //
     // CLASS APPLICATION ROLE                                                                                                               //

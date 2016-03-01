@@ -4,10 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Lang;
-using Org.Carfh.Courseware.Models.Courseware;
-using Org.Carfh.Courseware.Models.Repositories;
+using Org.Cafh.Courseware.Models.Courseware;
+using Org.Cafh.Courseware.Models.Repositories;
 
-namespace Org.Carfh.Courseware.Controllers
+namespace Org.Cafh.Courseware.Controllers
 {
     public class CoursesController : Controller
     {

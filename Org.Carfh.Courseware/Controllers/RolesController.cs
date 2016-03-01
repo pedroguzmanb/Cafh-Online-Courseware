@@ -6,9 +6,9 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Org.Carfh.Courseware.Models;
+using Org.Cafh.Courseware.Models;
 
-namespace Org.Carfh.Courseware.Controllers
+namespace Org.Cafh.Courseware.Controllers
 {
     // ------------------------------------------------------------------------------------------------------------------------------------ //
     // CLASS ROLES CONTROLLER                                                                                                               //

@@ -8,9 +8,9 @@ using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
-using Org.Carfh.Courseware.Models;
+using Org.Cafh.Courseware.Models;
 
-namespace Org.Carfh.Courseware.Controllers
+namespace Org.Cafh.Courseware.Controllers
 {
     [Authorize]
     public class AccountController : Controller

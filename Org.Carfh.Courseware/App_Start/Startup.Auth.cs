@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using Org.Carfh.Courseware.Models;
+using Org.Cafh.Courseware.Models;
 
-namespace Org.Carfh.Courseware
+namespace Org.Cafh.Courseware
 {
     public partial class Startup
     {

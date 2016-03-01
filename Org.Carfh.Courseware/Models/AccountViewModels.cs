@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Lang;
 
-namespace Org.Carfh.Courseware.Models
+namespace Org.Cafh.Courseware.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

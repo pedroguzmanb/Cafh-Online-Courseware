@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Lang;
 
-namespace Org.Carfh.Courseware.Models.Courseware
+namespace Org.Cafh.Courseware.Models.Courseware
 {
     public class LanguageSelectViewModel
     {

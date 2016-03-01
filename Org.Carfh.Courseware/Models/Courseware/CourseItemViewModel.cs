@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
 using Lang;
-using Org.Carfh.Courseware.Models.Repositories;
+using Org.Cafh.Courseware.Models.Repositories;
 
-namespace Org.Carfh.Courseware.Models.Courseware
+namespace Org.Cafh.Courseware.Models.Courseware
 {
 
     // ------------------------------------------------------------------------------------------------------------------------------------ //

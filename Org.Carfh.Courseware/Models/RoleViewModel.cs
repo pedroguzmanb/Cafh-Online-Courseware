@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Org.Carfh.Courseware.Models
+namespace Org.Cafh.Courseware.Models
 {
     public class RoleDto
     {

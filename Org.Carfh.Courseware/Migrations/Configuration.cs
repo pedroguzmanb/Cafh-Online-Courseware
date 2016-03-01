@@ -1,18 +1,18 @@
-namespace Org.Carfh.Courseware.Migrations
+namespace Org.Cafh.Courseware.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Org.Carfh.Courseware.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Org.Cafh.Courseware.Models.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(Org.Carfh.Courseware.Models.ApplicationDbContext context)
+        protected override void Seed(Org.Cafh.Courseware.Models.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 

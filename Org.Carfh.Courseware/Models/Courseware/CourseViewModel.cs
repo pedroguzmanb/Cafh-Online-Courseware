@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Lang;
-using Org.Carfh.Courseware.Models.Repositories;
+using Org.Cafh.Courseware.Models.Repositories;
 
-namespace Org.Carfh.Courseware.Models.Courseware
+namespace Org.Cafh.Courseware.Models.Courseware
 {
     // ------------------------------------------------------------------------------------------------------------------------------------ //
     // CLASS COURSE VIEW MODEL                                                                                                              //

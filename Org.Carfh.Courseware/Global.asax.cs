@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace Org.Carfh.Courseware
+namespace Org.Cafh.Courseware
 {
     public class MvcApplication : System.Web.HttpApplication
     {

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
-namespace Org.Carfh.Courseware.Models
+namespace Org.Cafh.Courseware.Models
 {
     public class IndexViewModel
     {
