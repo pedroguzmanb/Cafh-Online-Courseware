@@ -1,0 +1,40 @@
+﻿@using Lang
+@{
+    ViewBag.Title = Global.Home;
+}
+
+<div class="headline-box">
+    <div class="headline-box-content">
+        <h1>@Global.Welcome</h1>
+        <p class="lead">@Global.PlatformDescription</p>
+    </div>
+
+</div>
+
+<div class="platform-content">
+    <div class="row">
+        <div class="col-md-4">
+            <h2><i class="fa fa-search"></i> @Global.Courses</h2>
+            <hr/>
+            <p>
+                @Global.CoursesDescription
+            </p>
+            <a class="btn-cafh-a btn" href="@Url.Action("SelectLanguage", "Courses")"> @Global.ViewCourses <i class="fa fa-arrow-circle-right"></i> </a>
+        </div>
+        <div class="col-md-4">
+            <h2><i class="fa fa-sign-in"></i> Sign Up
+            </h2>
+            <hr/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sodales aliquet tempor. Fusce odio metus, dignissim sed semper quis, finibus vel quam.</p>
+            <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2><i class="fa fa-info-circle"></i> @Global.AboutCourseware
+            </h2>
+            <hr/>
+            <p> @Global.CoursewareIs</p>
+            <p><a class="btn btn-cafh-a" href="@Url.Action("About", "Home")">@Global.More <i class="fa fa-arrow-circle-right"></i></a></p>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,73 @@
+﻿@using Lang
+@model IEnumerable<Org.Carfh.Courseware.Models.Courseware.CourseItemViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="headline-box3">
+    <div class="headline-box-content">
+        <h1>@Global.TeachingsCatalogHeader</h1>
+        <p class="lead">@Global.TeachingsCatalogDescription</p>
+    </div>
+
+</div>
+
+<div class="platform-content">
+    <div class="row">
+
+        <div class="col-lg-12">
+            <div class="teachings-actions">
+                <a href="@Url.Action("Index", "Courses", new {language = ViewBag.Lang})" class="btn btn-cafh-a"><i class="fa fa-undo"></i> @Global.Back</a>
+                <a href="@Url.Action("Create", "Teachings", new {course = ViewBag.Course})" class="btn btn-cafh-a"><i class="fa fa-plus"></i> @Global.Add</a>
+            </div>
+        </div>
+
+        @foreach (var item in Model)
+        {
+            <div class="teaching col-lg-12 content-form">
+                <div class="col-lg-12 teaching-item">
+                    <div class="col-lg-12 teaching-header">
+                        <h4>@Html.DisplayFor(modelItem => item.Title)</h4>
+                    </div>
+                    <div class="col-lg-2 teaching-attr">
+                        <p><strong>@Global.Version:</strong> @Html.DisplayFor(modelItem => item.Version).@Html.DisplayFor(modelItem => item.Revision)</p>
+                    </div>
+                    <div class="col-lg-2 teaching-attr">
+                        <p><strong>@Global.Chapter:</strong> @Html.DisplayFor(modelItem => item.Chapter)</p>
+                    </div>
+                    <div class="col-lg-2 teaching-attr">
+                        <p><strong>@Global.Created:</strong> @Html.DisplayFor(modelItem => item.Created)</p>
+                        <p><strong>@Global.LastModified:</strong> @Html.DisplayFor(modelItem => item.LastModified)</p>
+                    </div>
+                    <div class="col-lg-6 pull-right teaching-attr">
+                        <div class="btn-group pull-right">
+                            <a href="@Url.Action("Read", "Teachings", new {id = item.Id})" class="btn btn-cafh-a">@Global.ViewTeaching <i class="fa fa-external-link"></i> </a>
+                            <a href="@Url.Action("Delete", "Teachings", new {id = item.Id})" class="btn btn-danger"> @Global.Delete <i class="fa fa-trash"></i></a>
+                            <a href="@Url.Action("Edit", "Teachings", new {id = item.Id})" class="btn btn-success"> @Global.Edit <i class="fa fa-pencil"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        }
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+

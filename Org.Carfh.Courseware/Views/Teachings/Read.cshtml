@@ -1,0 +1,83 @@
+﻿@using Lang
+@model Org.Carfh.Courseware.Models.Courseware.CourseItemViewModel
+
+@{
+    ViewBag.Title = @Model.Title;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section optimizations{
+
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="Cafh" />
+    <meta property="og:url" content="@Url.Action("Read", "Teachings", new { id = Model.Id }, Request.Url.Scheme)" />
+    <meta property="og:title" content="@Model.Title" />
+    <meta property="og:site_name" content="Cafh Courseware" />
+    <meta property="fb:app_id" content="886269491459356" />
+    <meta property="og:locale" content="en" />
+
+}
+
+<div class="headline-box3">
+    <div class="headline-box-content">
+        <h1>@Model.Title</h1>
+    </div>
+</div>
+
+<div class="platform-content">
+    <div class="row">
+
+        <div class="col-lg-12 teaching-content">
+            @Html.Raw(HttpUtility.HtmlDecode(Model.Content))
+            <hr/>
+        </div>
+
+
+
+        <div class="col-lg-12">
+
+            <div class="teaching-properties">
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Created)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Created)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.LastModified)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.LastModified)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Version)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Version) .@Html.DisplayFor(model => model.Revision)
+                    </dd>
+                </dl>
+            </div>
+
+        </div>
+
+        <div class="col-lg-6 pull-right">
+            <div class="teachings-actions">
+                
+                <div class="btn-group btn-group-justified">
+                    <a href="@Url.Action("Index", "Teachings", new {course = Model.Course})" class="btn btn-cafh-a"><i class="fa fa-undo"></i> @Global.Back</a>
+                    <a href="@Url.Action("Edit", "Teachings", new {id = Model.Id})" class="btn btn-success"><i class="fa fa-pencil"></i> @Global.Edit</a>
+                    <a href="@Url.Action("Delete", "Teachings", new {id = Model.Id})" class="btn btn-danger"><i class="fa fa-trash"></i> @Global.Delete</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

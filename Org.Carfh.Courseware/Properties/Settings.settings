@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Org.Carfh.Courseware.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DataEDMX" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Test</Value>
+    </Setting>
+    <Setting Name="TwilioSId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ACe81c511059fbc429b20a3e2cde27f37e</Value>
+    </Setting>
+    <Setting Name="TwilioToken" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">c535289c178ab6c4e51295c624238f2f</Value>
+    </Setting>
+    <Setting Name="TwilioFromNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">+13346974748</Value>
+    </Setting>
+    <Setting Name="StorageAccount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">sykesblog</Value>
+    </Setting>
+    <Setting Name="StoragePrimaryKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">P2xdN4WQfniWTnZ91dzV982M5A1vgo7J5hu6Q3RdmBkPkgJtIZAYZ1SnYsxsS6APXQq9F68PdSkRwMsyucVCYw==</Value>
+    </Setting>
+    <Setting Name="StorageSecondaryKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">2R1OA0JAY5xURUbZ7S9MC7MkE/a52vJYy3ayqQoLY5wBZ0Oldy/xfNeDLOg9uVnegFqscWwfGDdVrlH8oAaWxg==</Value>
+    </Setting>
+    <Setting Name="StorageConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">DefaultEndpointsProtocol=https;AccountName=sykesblog;AccountKey=P2xdN4WQfniWTnZ91dzV982M5A1vgo7J5hu6Q3RdmBkPkgJtIZAYZ1SnYsxsS6APXQq9F68PdSkRwMsyucVCYw==</Value>
+    </Setting>
+    <Setting Name="SendGridUID" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">azure_e0b1d0ff6959c08c7239eec6fbeb2f76@azure.com</Value>
+    </Setting>
+    <Setting Name="SendGridSecret" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">8Dqu97e14R1Gn8M</Value>
+    </Setting>
+    <Setting Name="SendgridServer" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">smtp.sendgrid.net</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
