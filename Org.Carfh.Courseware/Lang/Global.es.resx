@@ -132,6 +132,9 @@
   <data name="Back" xml:space="preserve">
     <value>Regresar</value>
   </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
   <data name="Catalog" xml:space="preserve">
     <value>Catálogo</value>
   </data>
@@ -177,6 +180,9 @@
   <data name="Delete" xml:space="preserve">
     <value>Eliminar</value>
   </data>
+  <data name="DeleteConfirmation" xml:space="preserve">
+    <value>Confirmar Eliminación</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Descripción</value>
   </data>
@@ -185,6 +191,9 @@
   </data>
   <data name="Edit" xml:space="preserve">
     <value>Editar</value>
+  </data>
+  <data name="EditRole" xml:space="preserve">
+    <value>Editar Rol</value>
   </data>
   <data name="EditTeaching" xml:space="preserve">
     <value>Editar enseñanza</value>
@@ -231,6 +240,9 @@
   <data name="Logout" xml:space="preserve">
     <value>Cerrar Sesión</value>
   </data>
+  <data name="ManageRoles" xml:space="preserve">
+    <value>Administrar Roles</value>
+  </data>
   <data name="More" xml:space="preserve">
     <value>Ver más</value>
   </data>
@@ -245,6 +257,9 @@
   </data>
   <data name="OfficialWebsite" xml:space="preserve">
     <value>Sitio web oficial</value>
+  </data>
+  <data name="OriginalRoleName" xml:space="preserve">
+    <value>Nombre Original del Rol</value>
   </data>
   <data name="Password" xml:space="preserve">
     <value>Contraseña</value>
@@ -266,6 +281,12 @@
   </data>
   <data name="Revision" xml:space="preserve">
     <value>Revisión</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="RolesDescription" xml:space="preserve">
+    <value>Cree, edite o elimine roles de usuario</value>
   </data>
   <data name="Save" xml:space="preserve">
     <value>Guardar</value>

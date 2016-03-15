@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Lang;
 
 namespace Org.Cafh.Courseware.Models
 {
@@ -20,7 +21,10 @@ namespace Org.Cafh.Courseware.Models
     /// </summary>
     public class RoleViewModel
     {
+        [Display(ResourceType = typeof(Global), Name = "Role")]
         public string RoleName { get; set; }
+
+        [Display(ResourceType = typeof(Global), Name = "Description")]
         public string Description { get; set; }
         public RoleViewModel() { }
         public RoleViewModel(ApplicationRole role)
@@ -62,8 +66,11 @@ namespace Org.Cafh.Courseware.Models
     /// </summary>
     public class EditRoleViewModel
     {
+        [Display(ResourceType = typeof(Global), Name = "OriginalRoleName")]
         public string OriginalRoleName { get; set; }
+        [Display(ResourceType = typeof(Global), Name = "Role")]
         public string RoleName { get; set; }
+        [Display(ResourceType = typeof(Global), Name = "Description")]
         public string Description { get; set; }
         public EditRoleViewModel() { }
         public EditRoleViewModel(ApplicationRole role)

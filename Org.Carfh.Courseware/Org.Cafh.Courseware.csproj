@@ -324,12 +324,15 @@
     <Content Include="Views\Teachings\Create.cshtml" />
     <Content Include="Views\Teachings\Edit.cshtml" />
     <Content Include="Views\Home\Directory.cshtml" />
+    <Content Include="Views\Roles\Index.cshtml" />
+    <Content Include="Views\Roles\Create.cshtml" />
+    <Content Include="Views\Roles\Edit.cshtml" />
+    <Content Include="Views\Roles\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\admin\" />
     <Folder Include="Content\public\fonts\" />
-    <Folder Include="Views\Roles\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

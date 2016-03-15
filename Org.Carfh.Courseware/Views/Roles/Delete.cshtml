@@ -1,0 +1,62 @@
+﻿@using Lang
+@model Org.Cafh.Courseware.Models.RoleViewModel
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div class="headline-box2">
+    <div class="headline-box-content">
+        <h1>@Global.DeleteConfirmation</h1>
+    </div>
+</div>
+
+
+<div class="platform-content">
+    <div class="row">
+        <div class="col-md-12 content-form">
+
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.RoleName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.RoleName)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Description)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Description)
+                </dd>
+
+            </dl>
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="form-actions no-color">
+                    @Html.ActionLink(@Global.Cancel, "Index", null, new { @class = "btn btn-cafh-a" })
+                    <input type="submit" value="@Global.Delete" class="btn btn-danger"/>
+
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

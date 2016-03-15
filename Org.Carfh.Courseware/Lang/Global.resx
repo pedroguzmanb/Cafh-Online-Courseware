@@ -121,7 +121,7 @@
     <value>Confirm password</value>
   </data>
   <data name="Courses" xml:space="preserve">
-    <value>View Courses</value>
+    <value>Browse Courses</value>
   </data>
   <data name="CoursesDescription" xml:space="preserve">
     <value>View all available Cafh courses.</value>
@@ -226,7 +226,7 @@
     <value>Select the language to display courses</value>
   </data>
   <data name="ViewCourses" xml:space="preserve">
-    <value>View Courses</value>
+    <value>Browse Courses</value>
   </data>
   <data name="LanguageSelectError" xml:space="preserve">
     <value>You must select a valid language</value>
@@ -305,5 +305,29 @@
   </data>
   <data name="OfficialWebsite" xml:space="preserve">
     <value>Official Website</value>
+  </data>
+  <data name="ManageRoles" xml:space="preserve">
+    <value>Manage Roles</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="OriginalRoleName" xml:space="preserve">
+    <value>Original Role Name</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CreateRole" xml:space="preserve">
+    <value>Create Role</value>
+  </data>
+  <data name="DeleteConfirmation" xml:space="preserve">
+    <value>Delete Confirmation</value>
+  </data>
+  <data name="EditRole" xml:space="preserve">
+    <value>Edit Role</value>
+  </data>
+  <data name="RolesDescription" xml:space="preserve">
+    <value>Create, edit or delete application roles</value>
   </data>
 </root>

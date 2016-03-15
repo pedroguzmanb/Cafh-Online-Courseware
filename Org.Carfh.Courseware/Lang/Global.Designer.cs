@@ -115,6 +115,15 @@ namespace Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Catalog.
         /// </summary>
         public static string Catalog {
@@ -196,7 +205,7 @@ namespace Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to View Courses.
+        ///   Looks up a localized string similar to Browse Courses.
         /// </summary>
         public static string Courses {
             get {
@@ -241,11 +250,29 @@ namespace Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create Role.
+        /// </summary>
+        public static string CreateRole {
+            get {
+                return ResourceManager.GetString("CreateRole", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete.
         /// </summary>
         public static string Delete {
             get {
                 return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete Confirmation.
+        /// </summary>
+        public static string DeleteConfirmation {
+            get {
+                return ResourceManager.GetString("DeleteConfirmation", resourceCulture);
             }
         }
         
@@ -273,6 +300,15 @@ namespace Lang {
         public static string Edit {
             get {
                 return ResourceManager.GetString("Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Role.
+        /// </summary>
+        public static string EditRole {
+            get {
+                return ResourceManager.GetString("EditRole", resourceCulture);
             }
         }
         
@@ -412,6 +448,15 @@ namespace Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Manage Roles.
+        /// </summary>
+        public static string ManageRoles {
+            get {
+                return ResourceManager.GetString("ManageRoles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Learn more.
         /// </summary>
         public static string More {
@@ -453,6 +498,15 @@ namespace Lang {
         public static string OfficialWebsite {
             get {
                 return ResourceManager.GetString("OfficialWebsite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Original Role Name.
+        /// </summary>
+        public static string OriginalRoleName {
+            get {
+                return ResourceManager.GetString("OriginalRoleName", resourceCulture);
             }
         }
         
@@ -516,6 +570,24 @@ namespace Lang {
         public static string Revision {
             get {
                 return ResourceManager.GetString("Revision", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Role.
+        /// </summary>
+        public static string Role {
+            get {
+                return ResourceManager.GetString("Role", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create, edit or delete application roles.
+        /// </summary>
+        public static string RolesDescription {
+            get {
+                return ResourceManager.GetString("RolesDescription", resourceCulture);
             }
         }
         
@@ -601,7 +673,7 @@ namespace Lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to View Courses.
+        ///   Looks up a localized string similar to Browse Courses.
         /// </summary>
         public static string ViewCourses {
             get {

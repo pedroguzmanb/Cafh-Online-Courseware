@@ -79,21 +79,18 @@ namespace Org.Cafh.Courseware.Controllers
         public ActionResult Create([Bind(Include =
             "RoleName,Description")]RoleViewModel model)
         {
-            string message = "El rol especificado ya existe en el sistema";
-            if (ModelState.IsValid)
+            var message = "El rol especificado ya existe en el sistema";
+            if (!ModelState.IsValid) return View();
+            var role = new ApplicationRole(model.RoleName, model.Description);
+            if (_db.RoleExists(_roleManager, model.RoleName))
             {
-                var role = new ApplicationRole(model.RoleName, model.Description);
-                if (_db.RoleExists(_roleManager, model.RoleName))
-                {
-                    return View(message);
-                }
-                else
-                {
-                    _db.CreateRole(_roleManager, model.RoleName, model.Description);
-                    return RedirectToAction("Index", "Roles");
-                }
+                return View(message);
             }
-            return View();
+            else
+            {
+                _db.CreateRole(_roleManager, model.RoleName, model.Description);
+                return RedirectToAction("Index", "Roles");
+            }
         } // METHOD CREATE ENDS ----------------------------------------------------------------------------------------------------------- //
 
         //--------------------------------------------------------------------------------------------------------------------------------- //
