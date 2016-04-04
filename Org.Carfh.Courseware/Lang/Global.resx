@@ -330,4 +330,10 @@
   <data name="RolesDescription" xml:space="preserve">
     <value>Create, edit or delete application roles</value>
   </data>
+  <data name="AddCourse" xml:space="preserve">
+    <value>Add Course</value>
+  </data>
+  <data name="SignUpDescription" xml:space="preserve">
+    <value>If you are an active Cafh member, you can sign up for Cafh Courseware account to access additional features on this platform. </value>
+  </data>
 </root>

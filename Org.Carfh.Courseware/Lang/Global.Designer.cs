@@ -88,6 +88,15 @@ namespace Lang {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Course.
+        /// </summary>
+        public static string AddCourse {
+            get {
+                return ResourceManager.GetString("AddCourse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Teaching.
         /// </summary>
         public static string AddTeaching {
@@ -615,6 +624,15 @@ namespace Lang {
         public static string SelectLanguageInstructions {
             get {
                 return ResourceManager.GetString("SelectLanguageInstructions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you are an active Cafh member, you can sign up for Cafh Courseware account to access additional features on this platform. .
+        /// </summary>
+        public static string SignUpDescription {
+            get {
+                return ResourceManager.GetString("SignUpDescription", resourceCulture);
             }
         }
         

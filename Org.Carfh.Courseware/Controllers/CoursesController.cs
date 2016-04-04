@@ -56,8 +56,58 @@ namespace Org.Cafh.Courseware.Controllers
         {
             var dbLangs = _courses.Get(language);
             var langs = dbLangs.Select(CourseViewModel.Transform).ToList();
+            ViewBag.Language = language;
             return View(langs);
         } // METHOD INDEX ENDS ------------------------------------------------------------------------------------------------------------ // 
+
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="language"></param>
+        /// <returns></returns>
+        [HttpGet]
+        public ActionResult Create(Guid language)
+        {
+            var course = new CourseViewModel
+            {
+                Language = language,
+                Id = Guid.NewGuid()
+            };
+            return View(course);
+        } // METHOD CREATE ENDS ----------------------------------------------------------------------------------------------------------- //
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public ActionResult Create(CourseViewModel model)
+        {
+            ActionResult result;
+            if (ModelState.IsValid)
+            {
+               var c = _courses.Post(CourseViewModel.Transform(model));
+                if (c != null && c.Id != Guid.Empty)
+                {
+                    result = RedirectToAction("Index", "Teachings", new {course = c.Id});
+                } // IF ENDS
+                else
+                {
+                    ModelState.AddModelError("", @Global.ErrorProcessingRequest);
+                    result = View(model);
+                } // ELSE ENDS
+            } // IF ENDS
+            else
+            {
+                result = View(model);
+            }
+            return result;
+        } // METHOD CREATE ENDS ------------------------------------------------------------------------------------------------------------ //
 
 
 

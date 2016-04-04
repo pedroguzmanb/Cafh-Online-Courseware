@@ -63,6 +63,7 @@ namespace Org.Cafh.Courseware.Models.Repositories
                 var query = from x in _context.CourseItems
                             where x.Id == course1.Id && x.Course == course1.Course
                             select x;
+
                 foreach (var item in query)
                 {
                     item.Content = courseItem.Content;

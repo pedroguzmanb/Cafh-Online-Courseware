@@ -12,22 +12,56 @@ using Org.Cafh.Courseware.Models;
 
 namespace Org.Cafh.Courseware.Controllers
 {
+
+    // ------------------------------------------------------------------------------------------------------------------------------------ //
+    // CLASS ACCOUNT CONTROLLER                                                                                                             //
+    // ------------------------------------------------------------------------------------------------------------------------------------ //
+    /// <summary>
+    ///     Account controller provides operations to sign in, sign up and managing account settings in general.
+    /// </summary>
     [Authorize]
     public class AccountController : Controller
     {
+
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        // CLASS PRIVATE ATTRIBUTES                                                                                                         //
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
 
+
+
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        // CLASS CONSTRUCTOR                                                                                                                //
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        /// <summary>
+        /// 
+        /// </summary>
         public AccountController()
         {
         }
 
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        // CLASS CONSTRUCTOR                                                                                                                //
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="userManager"></param>
+        /// <param name="signInManager"></param>
         public AccountController(ApplicationUserManager userManager, ApplicationSignInManager signInManager )
         {
             UserManager = userManager;
             SignInManager = signInManager;
-        }
+        } // CONSTRUCTOR ENDS ------------------------------------------------------------------------------------------------------------- //
 
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        // SIGN IN MANAGER                                                                                                                  //
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        /// <summary>
+        /// 
+        /// </summary>
         public ApplicationSignInManager SignInManager
         {
             get
@@ -38,8 +72,15 @@ namespace Org.Cafh.Courseware.Controllers
             { 
                 _signInManager = value; 
             }
-        }
+        } // SIGN IN MANAGER -------------------------------------------------------------------------------------------------------------- //
 
+
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        // USER MANAGER                                                                                                                     //
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        /// <summary>
+        /// 
+        /// </summary>
         public ApplicationUserManager UserManager
         {
             get
@@ -50,19 +91,34 @@ namespace Org.Cafh.Courseware.Controllers
             {
                 _userManager = value;
             }
-        }
+        } // USER MANAGER ----------------------------------------------------------------------------------------------------------------- //
 
-        //
-        // GET: /Account/Login
+
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        // METHOD LOGIN                                                                                                                     //
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        /// <summary>
+        /// GET: /Account/Login
+        /// </summary>
+        /// <param name="returnUrl"></param>
+        /// <returns></returns>
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
             ViewBag.ReturnUrl = returnUrl;
             return View();
-        }
+        } // METHOD LOGIN ENDS ------------------------------------------------------------------------------------------------------------ //
 
-        //
-        // POST: /Account/Login
+
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        // METHOD LOGIN                                                                                                                     //
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        /// <summary>
+        ///  POST: /Account/Login
+        /// </summary>
+        /// <param name="model"></param>
+        /// <param name="returnUrl"></param>
+        /// <returns></returns>
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
@@ -89,10 +145,19 @@ namespace Org.Cafh.Courseware.Controllers
                     ModelState.AddModelError("", "Invalid login attempt.");
                     return View(model);
             }
-        }
+        } // METHOD POST LOGIN ENDS ------------------------------------------------------------------------------------------------------- //
 
-        //
-        // GET: /Account/VerifyCode
+
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        // METHOD VERIFY CODE                                                                                                               //
+        // -------------------------------------------------------------------------------------------------------------------------------- //
+        /// <summary>
+        ///     METHOD VERIFY CODE 
+        /// </summary>
+        /// <param name="provider"></param>
+        /// <param name="returnUrl"></param>
+        /// <param name="rememberMe"></param>
+        /// <returns></returns>
         [AllowAnonymous]
         public async Task<ActionResult> VerifyCode(string provider, string returnUrl, bool rememberMe)
         {
@@ -102,7 +167,9 @@ namespace Org.Cafh.Courseware.Controllers
                 return View("Error");
             }
             return View(new VerifyCodeViewModel { Provider = provider, ReturnUrl = returnUrl, RememberMe = rememberMe });
-        }
+        } // METHOD VERIFY CODE ----------------------------------------------------------------------------------------------------------- //
+
+
 
         //
         // POST: /Account/VerifyCode

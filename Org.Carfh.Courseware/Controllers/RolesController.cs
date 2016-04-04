@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Org.Cafh.Courseware.Models;
 
@@ -173,5 +174,26 @@ namespace Org.Cafh.Courseware.Controllers
             _db.DeleteRole(_db, userManager, role.Id);
             return RedirectToAction("Index");
         } // METHOD DELETE CONFIRMED ENDS ------------------------------------------------------------------------------------------------- //
+
+
+
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AddUserToRole(string username, string role)
+        {
+            var user = _db.Users.FirstOrDefault(u => u.UserName.Equals(username, StringComparison.CurrentCultureIgnoreCase));
+            var account = new AccountController();
+            if (user != null) account.UserManager.AddToRole(user.Id, role);
+
+            ViewBag.ResultMessage = "Role created successfully !";
+
+            // prepopulat roles for the view dropdown
+            var list = _db.Roles.OrderBy(r => r.Name).ToList().Select(rr => new SelectListItem { Value = rr.Name.ToString(), Text = rr.Name }).ToList();
+            ViewBag.Roles = list;
+            return View();
+        }
     }
 }
